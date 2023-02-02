@@ -6,4 +6,17 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   }
-};
+}
+
+// {
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": true
+//   },
+//   "eslint.packageManager": "yarn",
+//   "eslint.options": {
+//     "cache": true,
+//     "cacheLocation": ".cache/eslint",
+//     "extensions": [".js", ".jsx", ".json", ".html", ".ts", ".tsx", ".mjs"]
+//   },
+//   "eslint.alwaysShowStatus": true
+// }

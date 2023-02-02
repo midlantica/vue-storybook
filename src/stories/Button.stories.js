@@ -10,7 +10,7 @@ export default {
     onClick: {},
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'large', 'xlarge'],
     },
   },
 }
@@ -38,6 +38,17 @@ export const Secondary = Template.bind({})
 Secondary.args = {
   label: 'Button',
 }
+export const Small = Template.bind({})
+Small.args = {
+  size: 'small',
+  label: 'Button',
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  size: 'medium',
+  label: 'Button',
+}
 
 export const Large = Template.bind({})
 Large.args = {
@@ -45,8 +56,8 @@ Large.args = {
   label: 'Button',
 }
 
-export const Small = Template.bind({})
-Small.args = {
-  size: 'small',
+export const Xlarge = Template.bind({})
+Xlarge.args = {
+  size: 'xlarge',
   label: 'Button',
 }
