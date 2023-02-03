@@ -11,6 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "storybook-tailwind-foundations": "^1.1.2",
     "vue": "^3.2.45"
   },
   "devDependencies": {
@@ -28,7 +29,6 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
-    "concurrently": "^7.6.0",
     "eslint": "^8.22.0",
     "eslint-plugin-storybook": "^0.6.10",
     "eslint-plugin-vue": "^9.3.0",

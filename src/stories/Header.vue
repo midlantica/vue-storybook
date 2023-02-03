@@ -11,7 +11,7 @@
         </svg>
         <h1>Acme</h1>
       </div>
-      <div class="flex gap-8">
+      <div class="flex gap-8 bg-purple-600">
         <span class="welcome" v-if="user">Welcome, <b>{{ user.name }}</b>!</span>
         <my-button size="small" @click="$emit('logout')" label="Log out" v-if="user" />
         <my-button size="small" @click="$emit('login')" label="Log in" v-if="!user" />

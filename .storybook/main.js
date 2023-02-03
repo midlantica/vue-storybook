@@ -1,7 +1,8 @@
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/**/*.stories.@(js|jsx|ts|tsx)",
+    '../../node_modules/storybook-tailwind-foundations/**/*.stories.js'
   ],
   "addons": [
     "@storybook/addon-links",
