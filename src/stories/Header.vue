@@ -1,18 +1,18 @@
 <template>
   <header>
-    <div class="wrapper">
+    <div class="flex justify-between items-center border-b border-black/[.1] px-[15px] py-[20px] font-sans">
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <svg class="inline" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <path d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z" fill="#FFF" />
             <path d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z" fill="#555AB9" />
             <path d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z" fill="#91BAF8" />
           </g>
         </svg>
-        <h1>Acme</h1>
+        <h1 class="text-gray-500">Acme</h1>
       </div>
-      <div class="flex gap-8 bg-purple-600">
-        <span class="welcome" v-if="user">Welcome, <b>{{ user.name }}</b>!</span>
+      <div class="flex gap-4 items-center">
+        <span class="text-[#333] text-sm" v-if="user">Welcome, <b>{{ user.name }}</b>!</span>
         <my-button size="small" @click="$emit('logout')" label="Log out" v-if="user" />
         <my-button size="small" @click="$emit('login')" label="Log in" v-if="!user" />
         <my-button primary size="small" @click="$emit('createAccount')" label="Sign up" v-if="!user" />

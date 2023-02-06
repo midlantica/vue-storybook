@@ -7,8 +7,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "concurrently 'yarn:watch:*'",
+    "watch:storybook": "start-storybook -p 6006",
+    "watch:tailwind": "npx tailwind -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/tailwind.css --watch",
+    "build:tailwind": "npx tailwind -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/tailwind.css",
+    "build-storybook": "npm build:tailwind && build-storybook"
   },
   "dependencies": {
     "storybook-tailwind-foundations": "^1.1.2",
@@ -29,6 +32,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
+    "concurrently": "^7.6.0",
     "eslint": "^8.22.0",
     "eslint-plugin-storybook": "^0.6.10",
     "eslint-plugin-vue": "^9.3.0",
