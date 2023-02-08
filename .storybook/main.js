@@ -13,7 +13,8 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "storybook-tailwind-dark-mode",
   ],
   "framework": "@storybook/vue3",
   "core": {

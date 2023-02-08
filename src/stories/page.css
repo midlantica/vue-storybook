@@ -5,7 +5,7 @@ section {
   padding: 48px 20px;
   margin: 0 auto;
   max-width: 600px;
-  color: #333;
+  @apply text-gray-800 dark:text-white;
 }
 
 section h2 {
@@ -15,24 +15,29 @@ section h2 {
   margin: 0 0 4px;
   display: inline-block;
   vertical-align: top;
+  @apply text-sky-600 dark:text-sky-200;
 }
 
 section p {
   margin: 1em 0;
+  /* @apply text-gray-800 dark:text-white; */
+  @apply text-gray-800 dark:text-gray-50;
 }
 
 section a {
   text-decoration: none;
-  color: #1ea7fd;
+  @apply text-sky-600 dark:text-white;
 }
 
 section ul {
   padding-left: 30px;
   margin: 1em 0;
+  @apply text-gray-800 dark:text-white;
 }
 
 section li {
   margin-bottom: 8px;
+  @apply text-gray-800 dark:text-white;
 }
 
 section .tip {
@@ -41,11 +46,11 @@ section .tip {
   font-size: 11px;
   line-height: 12px;
   font-weight: 700;
-  background: #e7fdd8;
-  color: #66bf3c;
+  /* background: #e7fdd8; */
   padding: 4px 12px;
   margin-right: 10px;
   vertical-align: top;
+  @apply text-white dark:text-white bg-sky-500 dark:bg-white;
 }
 
 section .tip-wrapper {
@@ -53,6 +58,7 @@ section .tip-wrapper {
   line-height: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
+  @apply text-gray-800 dark:text-white;
 }
 
 section .tip-wrapper svg {
@@ -65,5 +71,5 @@ section .tip-wrapper svg {
 }
 
 section .tip-wrapper svg path {
-  fill: #1ea7fd;
+  fill: var(--aqua);
 }

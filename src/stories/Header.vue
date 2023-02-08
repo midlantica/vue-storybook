@@ -12,7 +12,7 @@
         <h1 class="text-gray-500 font-black leading-none text-[20px] inline">Acme</h1>
       </div>
       <div class="flex gap-4 items-center">
-        <span class="text-[#333] text-sm" v-if="user">Welcome, <b>{{ user.name }}</b>!</span>
+        <span class="text-gray-800 dark:text-sky-50 text-sm" v-if="user">Welcome, <b>{{ user.name }}</b>!</span>
         <my-button size="small" @click="$emit('logout')" label="Log out" v-if="user" />
         <my-button size="small" @click="$emit('login')" label="Log in" v-if="!user" />
         <my-button primary size="small" @click="$emit('createAccount')" label="Sign up" v-if="!user" />

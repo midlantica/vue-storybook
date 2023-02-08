@@ -1,5 +1,6 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}
+  <button type="button" :class="classes" @click="onClick" :style="style">
+    {{ label }}
   </button>
 </template>
 
@@ -7,7 +8,7 @@
   import { reactive, computed } from 'vue'
 
   export default {
-    name: 'my-button',
+    name: 'button',
 
     props: {
       label: {
@@ -35,10 +36,10 @@
       props = reactive(props)
       return {
         classes: computed(() => ({
-          'storybook-button': true,
-          'storybook-button--primary': props.primary,
-          'storybook-button--secondary': !props.primary,
-          [`storybook-button--${props.size || 'medium'}`]: true,
+          'button': true,
+          'button--primary': props.primary,
+          'button--secondary': !props.primary,
+          [`button--${props.size || 'medium'}`]: true,
         })),
         style: computed(() => ({
           backgroundColor: props.backgroundColor,
@@ -52,7 +53,7 @@
 </script>
 
 <style scoped>
-.storybook-button {
+.button {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   border: 0;
@@ -63,34 +64,55 @@
   letter-spacing: .03rem;
 }
 
-.storybook-button--primary {
+.button--primary {
   color: white;
-  background-color: #1ea7fd;
+  background-color: rgb(15, 109, 146);
 }
 
-.storybook-button--secondary {
+.button--secondary {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 
-.storybook-button--small {
+.button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
 
-.storybook-button--medium {
+.button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
 
-.storybook-button--large {
+.button--large {
   font-size: 16px;
   padding: 12px 24px;
 }
 
-.storybook-button--xlarge {
+.button--xlarge {
   font-size: 18px;
   padding: 12px 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button--primary {
+    color: white;
+    background-color: var(--aqua);
+  }
+
+  .button--secondary {
+    color: white;
+    background-color: #333;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset; */
+  }
+
+  .button--small {}
+
+  .button--medium {}
+
+  .button--large {}
+
+  .button--xlarge {}
 }
 </style>
