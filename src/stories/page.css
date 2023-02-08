@@ -5,7 +5,7 @@ section {
   padding: 48px 20px;
   margin: 0 auto;
   max-width: 600px;
-  @apply text-gray-800 dark:text-white;
+  /* @apply text-gray-800 dark:text-white; */
 }
 
 section h2 {
@@ -50,7 +50,7 @@ section .tip {
   padding: 4px 12px;
   margin-right: 10px;
   vertical-align: top;
-  @apply text-white dark:text-white bg-sky-500 dark:bg-white;
+  @apply text-white dark:to-sky-900 bg-sky-500 dark:bg-white;
 }
 
 section .tip-wrapper {

@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "storybook": "concurrently 'yarn:watch:*'",
+    "storybook": "concurrently 'npm:watch:*'",
     "watch:storybook": "start-storybook -p 6006",
     "watch:tailwind": "npx tailwind -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/tailwind.css --watch",
     "build:tailwind": "npx tailwind -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/tailwind.css",

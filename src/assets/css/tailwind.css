@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -588,12 +588,12 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-\[2\.6rem\] {
-  font-size: 2.6rem;
-}
-
 .text-\[1\.2rem\] {
   font-size: 1.2rem;
+}
+
+.text-\[2\.6rem\] {
+  font-size: 2.6rem;
 }
 
 .text-\[20px\] {
@@ -605,20 +605,20 @@ video {
   line-height: 1.25rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-black {
   font-weight: 900;
 }
 
-.leading-normal {
-  line-height: 1.5;
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-gray-500 {
@@ -631,7 +631,9 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-sky-50 {
-  --tw-text-opacity: 1;
-  color: rgb(240 249 255 / var(--tw-text-opacity));
+@media (prefers-color-scheme: dark) {
+  .dark\:text-sky-50 {
+    --tw-text-opacity: 1;
+    color: rgb(240 249 255 / var(--tw-text-opacity));
+  }
 }
