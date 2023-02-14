@@ -23,7 +23,7 @@ section {
     margin: 1em 0;
     /* @apply text-gray-800 !important; */
     @apply text-gray-800;
-    color: red;
+    color: red !important;
   }
   section a {
     text-decoration: none;
@@ -85,27 +85,28 @@ section {
     margin: 0 0 4px;
     display: inline-block;
     vertical-align: top;
-    @apply text-sky-600;
+    @apply text-sky-300;
   }
   section p {
     margin: 1em 0;
-    @apply text-gray-800;
+    @apply text-white;
+
   }
 
   section a {
     text-decoration: none;
-    @apply text-sky-800;
+    @apply text-sky-200;
   }
 
   section ul {
     padding-left: 30px;
     margin: 1em 0;
-    @apply text-gray-800;
+    @apply text-white;
   }
 
   section li {
     margin-bottom: 8px;
-    @apply text-gray-800;
+    @apply text-white;
   }
 
   section .tip {
@@ -126,7 +127,7 @@ section {
     line-height: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    @apply text-gray-800;
+    @apply text-white;
   }
 
   section .tip-wrapper svg {

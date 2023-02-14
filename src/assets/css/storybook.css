@@ -1,12 +1,10 @@
 html:not(.dark) > .sb-show-main {
 	/* replace color */
-	/* color: black; */
 	background: white !important;
 }
 
 .dark > .sb-show-main {
 	/* replace color */
-	/* color: white; */
 	background: black !important;
 }
 

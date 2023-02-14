@@ -40,7 +40,7 @@
 </template>
 
 <script>
-  import './page.css'
+  // import './page.css'
   import MyHeader from './Header.vue'
 
   export default {
