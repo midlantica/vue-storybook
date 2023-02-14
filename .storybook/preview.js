@@ -8,9 +8,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  darkMode: true,
+  darkMode: false,
   backgrounds: {
-    default: 'dark',
+    default: 'light',
     values: [
       { name: 'light', value: 'whitesmoke' },
       { name: 'dark', value: 'black' },

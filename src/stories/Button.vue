@@ -98,7 +98,7 @@
 @media (prefers-color-scheme: dark) {
   .button--primary {
     color: white;
-    background-color: var(--aqua);
+    @apply bg-sky-600;
   }
 
   .button--secondary {

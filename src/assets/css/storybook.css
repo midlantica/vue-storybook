@@ -1,9 +1,26 @@
 html:not(.dark) > .sb-show-main {
 	/* replace color */
-	background: hsl(0, 0%, 95%) !important;
+	/* color: black; */
+	background: white !important;
 }
 
 .dark > .sb-show-main {
 	/* replace color */
-	background: hsl(0, 0%, 10%) !important;
+	/* color: white; */
+	background: black !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.dark > .sb-show-main {
+		/* replace color */
+		/* color: white; */
+		background: black !important;
+	}
+}
+@media (prefers-color-scheme: light) {
+	html:not(.dark) > .sb-show-main {
+		/* replace color */
+		/* color: black; */
+		background: white !important;
+	}
 }
