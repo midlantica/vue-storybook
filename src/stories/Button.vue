@@ -66,6 +66,7 @@
 
 .button--primary {
   color: white;
+  /* @apply text-red; */
   background-color: rgb(15, 109, 146);
 }
 
@@ -97,8 +98,7 @@
 
 @media (prefers-color-scheme: dark) {
   .button--primary {
-    color: white;
-    @apply bg-sky-600;
+    @apply text-white bg-sky-600;
   }
 
   .button--secondary {
